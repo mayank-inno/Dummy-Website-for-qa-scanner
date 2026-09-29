@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign up | Dummy Site</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Create account</h1>
+    <form id="signup-form" novalidate>
+      <label for="signup-name">Full name</label>
+      <input type="text" id="signup-name" name="name" placeholder="Jane Doe" autocomplete="name">
+
+      <label for="signup-email">Email</label>
+      <input type="email" id="signup-email" name="email" placeholder="you@example.com" autocomplete="email">
+
+      <label for="signup-password">Password</label>
+      <div class="password-wrap">
+        <input type="password" id="signup-password" name="password" placeholder="Password" autocomplete="new-password">
+        <button type="button" class="toggle" data-target="signup-password" aria-label="Show password">Show</button>
+      </div>
+
+      <label for="signup-confirm">Confirm password</label>
+      <div class="password-wrap">
+        <input type="password" id="signup-confirm" name="confirmPassword" placeholder="Confirm password" autocomplete="new-password">
+        <button type="button" class="toggle" data-target="signup-confirm" aria-label="Show confirm password">Show</button>
+      </div>
+
+      <button type="submit" class="primary">Sign up</button>
+      <p class="message" id="signup-message" role="status"></p>
+    </form>
+    <p class="switch">Already have an account? <a href="index.html">Log in</a></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

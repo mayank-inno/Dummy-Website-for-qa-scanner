@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | Dummy Site</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Log in</h1>
+    <form id="login-form" novalidate>
+      <label for="login-email">Email</label>
+      <input type="email" id="login-email" name="email" placeholder="you@example.com" autocomplete="email">
+
+      <label for="login-password">Password</label>
+      <div class="password-wrap">
+        <input type="password" id="login-password" name="password" placeholder="Password" autocomplete="current-password">
+        <button type="button" class="toggle" data-target="login-password" aria-label="Show password">Show</button>
+      </div>
+
+      <button type="submit" class="primary">Log in</button>
+      <p class="message" id="login-message" role="status"></p>
+    </form>
+    <p class="switch">Don't have an account? <a href="signup.html">Sign up</a></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
