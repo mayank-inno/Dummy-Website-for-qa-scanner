@@ -59,3 +59,6 @@ input:focus { outline: 2px solid #4a6cf7; border-color: transparent; }
 .message { min-height: 1.2em; margin: 12px 0 0; font-size: 0.9rem; color: #1b7a3d; }
 .switch { margin: 18px 0 0; text-align: center; font-size: 0.9rem; }
 .switch a { color: #4a6cf7; font-weight: 600; }
+.entered { margin: 16px 0 0; }
+.entered dt { font-size: 0.85rem; font-weight: 600; color: #5a6275; margin-top: 10px; }
+.entered dd { margin: 4px 0 0; font-family: ui-monospace, monospace; word-break: break-all; }
